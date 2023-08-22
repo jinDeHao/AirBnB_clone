@@ -1,1 +1,0 @@
-this project is about html and css web static

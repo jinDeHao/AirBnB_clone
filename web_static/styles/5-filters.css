@@ -4,13 +4,12 @@
     width: 100%;
     border: solid 1px #DDDDDD;
     display: flex;
-    justify-content: left;
+    justify-content: right;
     align-items: center;
 }
 
 button {
     /* position: relative; */
-
     margin-right: 30px;
     width: 20%;
     height: 48px;
@@ -21,71 +20,33 @@ button {
     border-radius: 4px;
 }
 
-button:hover {
+button:hover{
     opacity: 90%;
 }
-
 .filters .locations {
     border-right: solid #DDDDDD 1px;
 }
 
-.filters .locations,
-.amenities {
+.filters .locations, .amenities {
     height: 100%;
     width: 25%;
-    margin-left: 0px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
-
 .filters .amenities {
     flex-grow: 1;
 }
 
-
-.popover {
-    display: none;
-}
-
-ul {
-    list-style-type: none;
-    list-style: none;
-    background-color: #FAFAFA;
-    position: relative;
-    width: 210px;
-    border: solid #DDDDDD 1px;
-    padding-bottom: 15px;
-}
-
-.amenities ul {
-    flex-grow: 3;
-    padding-top: 60px;
-}
-
-.amenities:hover,
-.locations:hover {
-    .popover {
-        display: block;
-    }
-}
-
-h2 {
-    margin-bottom: 0px;
-    font-size: 16px;
-}
-
 h3 {
-    margin-left: 50px;
     margin-bottom: 0;
     font-weight: 600;
 }
 
 h4 {
-    margin-left: 50px;
     margin-top: 0;
-    height: 17px;
     font-weight: 400;
     font-size: 14px;
-}
-
-li h4 {
-    margin-bottom: 0;
 }
